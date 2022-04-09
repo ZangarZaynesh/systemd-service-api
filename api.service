@@ -1,0 +1,12 @@
+[Unit]
+Description=API server
+
+[Service]
+ExecStart=/opt/pt/bin/api
+Restart=always
+WorkingDirectory=/opt/pt/bin
+
+
+[Install]
+WantedBy=multi-user.target
+Alias=api.service
